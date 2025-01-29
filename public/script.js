@@ -32,7 +32,7 @@ document.getElementById('calculateButton').addEventListener('click', async () =>
 
     // Display the result or error
     if (data.result !== undefined) {
-      document.getElementById('result').textContent = `Result: ${data.result}`;
+      document.getElementById('result').textContent = `${data.result}`;
     } else {
       document.getElementById('result').textContent = `Error: ${data.error || 'An error occurred'}`;
     }
