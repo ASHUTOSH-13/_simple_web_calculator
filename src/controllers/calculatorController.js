@@ -1,4 +1,4 @@
-exports.add = (req, res) => {
+const add = (req, res) => {
   console.log(req.body); // Debugging: Log the incoming request body
   const { num1, num2 } = req.body;
 
@@ -14,7 +14,7 @@ exports.add = (req, res) => {
   res.json({ result });
 };
 
-exports.subtract = (req, res) => {
+const subtract = (req, res) => {
   console.log(req.body); // Debugging: Log the incoming request body
   const { num1, num2 } = req.body;
 
@@ -29,7 +29,7 @@ exports.subtract = (req, res) => {
   res.json({ result });
 };
 
-exports.multiply = (req, res) => {
+const multiply = (req, res) => {
   console.log(req.body); // Debugging: Log the incoming request body
   const { num1, num2 } = req.body;
 
@@ -44,7 +44,7 @@ exports.multiply = (req, res) => {
   res.json({ result });
 };
 
-exports.divide = (req, res) => {
+const divide = (req, res) => {
   console.log(req.body); // Debugging: Log the incoming request body
   const { num1, num2 } = req.body;
 
@@ -62,3 +62,5 @@ exports.divide = (req, res) => {
   const result = number1 / number2;
   res.json({ result });
 };
+
+module.exports = { add, subtract, multiply, divide };
