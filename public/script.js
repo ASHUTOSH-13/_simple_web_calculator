@@ -11,7 +11,7 @@ document.getElementById('calculateButton').addEventListener('click', async () =>
   }
 
   // Prepare the API URL and body based on the operation
-  const apiUrl = `https://simple-web-calculator.onrender.com//api/${operation}`;
+  const apiUrl = `https://simple-web-calculator.onrender.com/api/${operation}`;
   const body = {
     num1: num1, // Use `num1` and `num2` as expected by the backend
     num2: num2
